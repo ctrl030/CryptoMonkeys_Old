@@ -2,8 +2,8 @@
 #mbody {
     position: relative;
     background-color: #2e0505;
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: 240px;
     border-radius: 50% 50% 20% 20%;
     position: absolute;
     top: 200px;
@@ -26,24 +26,15 @@
     width: 120px;
     border-radius: 50% 50% 20% 20%;
     left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%);   
 }
 
-#mHeadLower {
-    position: relative;
-    background-color: brown;
-    height: 100px;
-    width: 175px;
-    border-radius: 50%;
-    top: 100px;
-}
-
-.eyeArea {
-    position: relative;
+#eyeArea {
+    position: absolute;
     top: 62px;
     display: flex;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);   
 }
 
 
@@ -62,6 +53,33 @@
     width: 12px;
     border-radius: 50%;
     top: 24px;
-    left: 15px;
+    left: 50%;
+    transform: translateX(-50%);   
 }
 
+#mHeadLower {
+    position: absolute;
+    background-color: brown;
+    height: 100px;
+    width: 175px;
+    border-radius: 50%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#armsArea {    
+    position: absolute;
+    top: 62px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
+.arm {
+    position: relative;
+    background-color: saddlebrown;
+    height: 260px;
+    width: 60px;
+    border-radius: 20% 20% 20% 20%;
+}
