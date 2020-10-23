@@ -21,29 +21,41 @@
 
 #mHeadTop{
     position: absolute;
-    background-color: #821010;
+    background-color: #6d0b0b;
     height: 160px;
-    width: 120px;
+    width: 125px;
     border-radius: 50% 50% 20% 20%;
     left: 50%;
     transform: translateX(-50%);   
 }
 
-#eyeArea {
+#eyesArea {
+    background-color: rgb(199, 130, 71);
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: 62px;
+    top: 52px;
     display: flex;
     left: 50%;
-    transform: translateX(-50%);   
+    transform: translateX(-50%);
+    border-radius: 40% 40% 0% 0%;   
 }
 
-
-.eye {
+.eyes {
     position: relative;
-    background-color: white;    
+    background-color: white;
+    top: 10px;    
     height: 60px;
     width: 40px;
     border-radius: 50% 50% 20% 20%;  
+}
+
+#leftEye{
+ left: 10px;
+}
+
+#rightEye{
+    left: 10px;
 }
 
 .pupil {
@@ -58,7 +70,7 @@
 }
 
 #mHeadLower {
-    position: absolute;
+    position: relative;
     background-color: brown;
     height: 100px;
     width: 175px;
@@ -68,18 +80,103 @@
     transform: translateX(-50%);
 }
 
+#noseArea {
+    position: relative;
+    height: 20px;
+    width: 30px;
+    top: 20px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
+#leftNostril{
+    position: absolute;
+    background-color: rgb(78, 39, 11);    
+    height: 10px;
+    width: 16px;
+    border-radius: 80% 5% 100% 0%;
+    transform: translateX(-50%);  
+       
+}
+
+#rightNostril{
+    position: absolute;
+    background-color:  rgb(78, 39, 11);    
+    height: 10px;
+    width: 16px;
+    border-radius: 5% 80% 0% 100%;    
+    left: 80%;    
+}
+
+#mouthArea {
+    background-color: rgb(199, 130, 71);
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20% 20% 50% 50%;   
+
+}
+
+#mouth{
+
+}
+
+
+
 #armsArea {    
     position: absolute;
     top: 62px;
     display: flex;
     left: 50%;
     transform: translateX(-50%);   
+    z-index: 200;
 }
 
-.arm {
+.arms {
     position: relative;
     background-color: saddlebrown;
     height: 260px;
     width: 60px;
     border-radius: 20% 20% 20% 20%;
+    
+}
+
+#leftArm {
+    right: 16px;
+    transform: rotate(-9deg); 
+}
+
+#rightArm {
+    left: 16px;
+    transform: rotate(9deg); 
+}
+
+#feetArea{
+    position: relative;
+    top: 272px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+.feet{
+    position: absolute;
+    background-color: darkred;    
+    height: 40px;
+    width: 70px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#rightFoot{ 
+    right: -6px; 
+}
+
+#leftFoot{
+    left: -6px; 
 }
